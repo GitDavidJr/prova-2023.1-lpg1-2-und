@@ -19,7 +19,7 @@ public class Repositorio {
             indice++;
         } else{
             for(int i = 0; i<indice; i++ ){
-                rep_cpf = BD[i].comparacao_cpf(f);
+                rep_cpf = rep_cpf || BD[i].comparacao_cpf(f);
             }
             if(rep_cpf){
                 System.out.println("Funcionario já cadastrado");
